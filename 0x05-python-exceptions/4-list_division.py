@@ -8,10 +8,8 @@ def list_division(my_list_1, my_list_2, list_length):
             if element1 is None or element2 is None:
                 raise IndexError("out of range")
             result = element1 / element2
-        try:
-            result = my_list_1[i] / my_list_2[i]
         except TypeError:
-            print("wrongtype")
+            print("wrong type")
             result = 0
         except ZeroDivisionError:
             print("division by 0")
