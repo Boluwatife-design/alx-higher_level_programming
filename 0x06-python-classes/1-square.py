@@ -10,4 +10,4 @@ class Square:
 
         :size(int): size of a new square
         """
-        self.size = size
+        self.__size = size
