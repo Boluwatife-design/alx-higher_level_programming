@@ -8,8 +8,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
 
-            :width (int): The width of new rectangle.
-            :height (int): The height of new rectangle.
+            :width (int): The width of the new rectangle.
+            :height (int): The height of the new rectangle.
         """
         self.width = width
         self.height = height
@@ -45,19 +45,19 @@ class Rectangle:
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """Return the perimeter of  Rectangle."""
+        """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-    
+
     def __str__(self):
-        """returns printable representation of rectangle
-        
-        represents the rectangle with the # character.
+        """Return the printable representation of Rectangle.
+
+        Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
-        
+
         rectangle = []
         for i in range(self.__height):
             [rectangle.append('#') for j in range(self.__width)]
