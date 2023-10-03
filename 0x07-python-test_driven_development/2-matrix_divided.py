@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
 
         :matrix (list): A list of lists of ints or floats.
         :div (int/float): The divisor.
-    raise:
+    raises:
         TypeError: If the matrix contains non-numbers.
         TypeError: If the matrix contains rows of different sizes.
         TypeError: If div is not an int or float.
@@ -24,7 +24,7 @@ def matrix_divided(matrix, div):
                         "integers/floats")
 
     if not all(len(row) == len(matrix[0]) for row in matrix):
-        raise TypeError("Each row of the matrix must have same size")
+        raise TypeError("Each row of the matrix must have the same size")
 
     if not isinstance(div, int) and not isinstance(div, float):
         raise TypeError("div must be a number")
