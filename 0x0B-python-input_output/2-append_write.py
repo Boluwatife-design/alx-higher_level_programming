@@ -3,11 +3,12 @@
 
 
 def append_write(filename="", text=""):
-    """appends a string to a file
-    
-    :filename(str):name of file to append to
-    :text(str):str to append to file
-    :Returns: number of character added
+    """Appends a string to the end of a UTF8 text file.
+
+        :filename (str): The name of the file to append to.
+        :text (str): The string to append to the file.
+    Returns:
+        The number of characters appended.
     """
     with open(filename, 'a', encoding="utf-8") as f:
         return f.write(text)
