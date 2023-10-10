@@ -8,5 +8,5 @@ def append_write(filename="", text=""):
     :filename(str):name of file to append to
     :text(str)str to append to
     """
-    with open(filename, 'a', encoding=UTF-8) as f:
+    with open(filename, 'a', encoding="utf-8") as f:
         return f.write(text)
